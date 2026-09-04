@@ -1,6 +1,6 @@
 {
   "name": "Color Fun",
-  "description": "Anime coloring book web application with landscape layout, smart tap-to-fill, rich palettes, creations gallery, and PNG export.",
+  "description": "Coloring book application featuring Anime Girls and peaceful Nature & Village categories with smart tap-to-fill, rich palettes, creations gallery, and PNG export.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

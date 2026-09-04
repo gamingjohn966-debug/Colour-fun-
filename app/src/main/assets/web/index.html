@@ -70,6 +70,33 @@
 
         <!-- Right Content Area (Continue & Recent) -->
         <div class="home-content-panel">
+          <!-- Two Main Categories Quick Access -->
+          <div class="home-categories-section">
+            <div class="section-header">
+              <div class="section-title">
+                <span>🎨</span> Categories
+              </div>
+            </div>
+            <div class="home-category-row">
+              <div class="home-cat-card" data-open-main-cat="anime_girls" role="button" tabindex="0">
+                <div class="home-cat-icon">🌸</div>
+                <div class="home-cat-info">
+                  <div class="home-cat-title">Anime Girls</div>
+                  <div class="home-cat-desc">12 Character Pages</div>
+                </div>
+                <span class="home-cat-arrow">➔</span>
+              </div>
+              <div class="home-cat-card" data-open-main-cat="nature_village" role="button" tabindex="0">
+                <div class="home-cat-icon">🏡</div>
+                <div class="home-cat-info">
+                  <div class="home-cat-title">Nature &amp; Village</div>
+                  <div class="home-cat-desc">22 Peaceful Sceneries</div>
+                </div>
+                <span class="home-cat-arrow">➔</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Continue Coloring Section (Conditional) -->
           <div id="home-continue-section" style="display:none;">
             <div class="section-header">
@@ -120,7 +147,21 @@
       </div>
 
       <div class="gallery-layout">
-        <!-- Categories Filter Pills -->
+        <!-- Two Main Categories Switcher -->
+        <div class="main-category-bar" role="tablist">
+          <button id="main-cat-anime" class="main-cat-btn active" data-main-category="anime_girls" role="tab" aria-selected="true" title="Anime Girls Coloring Pages">
+            <span class="main-cat-icon">🌸</span>
+            <span class="main-cat-label">ANIME GIRLS</span>
+            <span class="main-cat-count" id="count-anime">12</span>
+          </button>
+          <button id="main-cat-village" class="main-cat-btn" data-main-category="nature_village" role="tab" aria-selected="false" title="Nature & Village Coloring Pages">
+            <span class="main-cat-icon">🏡</span>
+            <span class="main-cat-label">NATURE &amp; VILLAGE</span>
+            <span class="main-cat-count" id="count-village">22</span>
+          </button>
+        </div>
+
+        <!-- Sub-Categories Filter Pills -->
         <div id="gallery-category-pills" class="category-pills"></div>
 
         <!-- Artwork Grid -->
@@ -359,6 +400,11 @@
     </div>
   </div>
 
-  <script type="module" src="app.js"></script>
+  <script src="audio.js"></script>
+  <script src="palettes.js"></script>
+  <script src="artworks.js"></script>
+  <script src="storage.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
